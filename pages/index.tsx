@@ -14,6 +14,11 @@ const IndexPage = () => (
         <a>Sample</a>
       </Link>
     </p>
+    <p>
+      <Link href="/helmet">
+        <a>Helmet</a>
+      </Link>
+    </p>
   </Layout>
 )
 

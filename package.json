@@ -8,9 +8,11 @@
     "type-check": "tsc"
   },
   "dependencies": {
+    "@types/react-helmet": "^6.1.0",
     "next": "latest",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "react-helmet": "^6.1.0"
   },
   "devDependencies": {
     "@types/node": "^12.12.21",
