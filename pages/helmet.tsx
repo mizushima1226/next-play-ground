@@ -29,7 +29,7 @@ const Helmet = () => {
         <button type="button" onClick={() => setFlg(!flg)}>Change!</button>
       </div>
       <img src={src} alt="" width="300" height="" />
-      <a href="http://twitter.com/share?url=https://sample-ogp.tiiny.site/&text=OGPテスト&hashtags=OGP" target="_blank">ツイート</a>
+      <a href="http://twitter.com/share?url=https://next-play-ground.vercel.app/helmet/&text=OGPテスト&hashtags=OGP" target="_blank">ツイート</a>
     </Layout>
   )
 }
