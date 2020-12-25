@@ -31,7 +31,7 @@ const SampleSsrOgp = (props: Props) => {
       </Head>
       <Title>This is Sample SSR OGP</Title>
       <img src={temp[num]} />
-      <a href="http://twitter.com/share?url=https://next-play-ground.vercel.app/helmet/&text=OGPテスト&hashtags=OGP" target="_blank">ツイート</a>
+      <a href={`http://twitter.com/share?url=${url}/${num}&text=OGPテスト&hashtags=OGP`} target="_blank">ツイート</a>
     </Layout>
   )
 }
