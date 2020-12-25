@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet'
+import Head from "next/head";
 
 import Layout from '../../components/Layout'
 import { Title } from '../../components/Title'
@@ -18,7 +18,7 @@ const SampleSsrOgp = (props: Props) => {
   const { num } = props;
   return (
     <Layout>
-      <Helmet>
+      <Head>
         <title>mizuタイトル</title>
         <meta name="description" content="Helmet application" />
         <meta property="og:title" content="サンプルOGP" />
@@ -28,7 +28,7 @@ const SampleSsrOgp = (props: Props) => {
         <meta property="og:site_name" content="sample-ogp" />
         <meta property="og:description" content="OGPの練習中です。。。" />
         <meta name="twitter:card" content="summary_large_image" />
-      </Helmet>
+      </Head>
       <Title>This is Sample SSR OGP</Title>
       <img src={temp[num]} />
       <a href="http://twitter.com/share?url=https://next-play-ground.vercel.app/helmet/&text=OGPテスト&hashtags=OGP" target="_blank">ツイート</a>
