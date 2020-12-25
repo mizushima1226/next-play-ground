@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Helmet as _Helmet } from "react-helmet";
+import { Helmet } from "react-helmet";
 
 import Layout from '../components/Layout'
 import { Title } from '../components/Title'
@@ -7,13 +7,13 @@ import { Title } from '../components/Title'
 const src1 = "https://cdn.lgtmoon.dev/images/111074";
 const src2 = "https://cdn.lgtmoon.dev/images/3162";
 
-const Helmet = () => {
+const SampleHelmet = () => {
   const [flg, setFlg] = useState(true);
   const src = flg ? src1 : src2
 ;
   return (
     <Layout title="ヘルメット">
-      <_Helmet>
+      <Helmet>
         <title>mizuタイトル</title>
         <meta name="description" content="Helmet application" />
         <meta property="og:title" content="サンプルOGP" />
@@ -23,7 +23,7 @@ const Helmet = () => {
         <meta property="og:site_name" content="sample-ogp" />
         <meta property="og:description" content="OGPの練習中です。。。" />
         <meta name="twitter:card" content="summary_large_image" />
-      </_Helmet>
+      </Helmet>
       <Title>ヘルメット⛑</Title>
       <div>
         <button type="button" onClick={() => setFlg(!flg)}>Change!</button>
@@ -34,4 +34,4 @@ const Helmet = () => {
   )
 }
 
-export default Helmet;
+export default SampleHelmet;

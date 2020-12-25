@@ -15,8 +15,13 @@ const IndexPage = () => (
       </Link>
     </p>
     <p>
-      <Link href="/helmet">
+      <Link href="/sampleHelmet">
         <a>Helmet</a>
+      </Link>
+    </p>
+    <p>
+      <Link href="/sampleSsrOgp">
+        <a>Sample SSR OGP</a>
       </Link>
     </p>
   </Layout>
