@@ -2,6 +2,8 @@ import React, { ReactNode } from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
 
+import { routes } from "../utils/const";
+
 type Props = {
   children?: ReactNode
   title?: string
@@ -16,18 +18,9 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
     </Head>
     <header>
       <nav>
-        <Link href="/">
+        <Link href={routes.top}>
           <a>Home</a>
-        </Link>{' '}
-        |{' '}
-        <Link href="/about">
-          <a>About</a>
-        </Link>{' '}
-        |{' '}
-        <Link href="/users">
-          <a>Users List</a>
-        </Link>{' '}
-        | <a href="/api/users">Users API</a>
+        </Link>
       </nav>
     </header>
     {children}
